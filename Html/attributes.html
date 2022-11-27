@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class=" geek myclass">Document</title>
+</head>
+<body>
+ 
+<div  id="show3" class="show4">
+
+    hello india 
+    <p> 1st p inside div 
+        <!-- hello -->
+        <span class="hello"> Geekyshows</span>
+    </p>
+    <span class="hello"> Geekyshows</span>
+    <p class="geek"> 2nd p insided div
+    <span class="hello"> Geekyshows</span>
+        <em>world</em><span> Youtub</span></p>
+        </div>
+
+<script>
+
+let abc = document.getElementById("show3");
+let getatr = abc.attributes[0].nodeName;
+let ab = abc.attributes[0].nodeValue;
+
+let ac = abc.attributes[1].nodeName;
+let bc = abc.attributes[1].nodeValue;
+document.write(ac + " = " + bc + "<br>");
+
+document.write(ab + "<br>");
+document.write(getatr);
+
+
+</script>
+</body>
+</html>

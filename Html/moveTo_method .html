@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is a MoveBy() Method</h1>
+
+    <button type="button" id="openwin">Openwin</button>
+    <button type="button" id="movewin">Movewin</button>
+
+    <script>
+      var newwindow;
+
+      function openwin() {
+        newwindow = window.open("", "openwin", " width=300 , height=200");
+        newwindow.document.write(" Hello i'm Good Programaer");
+      }
+
+      function movewin() {
+        newwindow.moveTo(200,200);
+        newwindow.focus();
+      }
+
+      var p = document.getElementById("openwin");
+      var q = document.getElementById("movewin");
+
+      p.addEventListener("click", openwin);
+      q.addEventListener("click", movewin);
+    </script>
+  </body>
+</html>

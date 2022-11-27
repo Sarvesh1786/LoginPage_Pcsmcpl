@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Hello Elon Mask</h1>
+
+
+<p id="myb" >Elon Reeve Musk FRS is a business magnate and investor. He is<br> the founder, CEO, and chief engineer of <br>SpaceX; angel investor, CEO, and product architect of ...</p>
+
+<button type="button" id="mybtn"> clear time</button>
+
+
+<script>
+
+// function checkout(){
+//     document.getElementById("myb").style ='color :blue';
+// }
+
+// setTimeout(checkout,2000);
+
+var timeclr = setTimeout(() =>{ 
+    document.getElementById('myb').style ='color : blue';
+},5000);
+
+function clrtime (){
+    clearTimeout(timeclr);
+}
+
+var p = document.getElementById("mybtn")
+p.addEventListener('click',clrtime,false);
+
+
+</script>
+
+
+</body>
+</html>

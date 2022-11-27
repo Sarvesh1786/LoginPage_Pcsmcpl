@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>SetInterval</h1>
+
+    <div id="myp"></div>
+    <button type="button" id="mybt">Stop</button> -->
+    <button type="button" id="mybtt">Start</button>
+
+    <script>
+      // var p = setInterval(() =>{
+      //     document.getElementById("myp").textContent += "   Ram  ";
+      // },2000);
+
+      // div
+      var d = document.getElementById("myp");
+
+      var a = document.getElementById("mybt"); //stop
+      var b = document.getElementById("mybtt"); // start
+
+      var c;
+
+ var p = "  _  ";
+
+
+      function strt() {
+
+
+    p = p.replace("   Ram--  ", " ----");
+        p+= "   Ram--  " ;
+
+        d.textContent = p;
+        
+      }
+
+      function cltint() {
+        clearInterval(c);
+      }
+
+      function agn() {
+        c = setInterval(strt, 2000);
+      }
+
+      a.addEventListener("click", cltint);
+      b.addEventListener("click", agn);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="myid">
+
+    <h1 id="id1">
+        Hwl india
+    </h1>
+
+</div>
+
+<script>
+
+
+
+
+var df =  document.createDocumentFragment();
+var ab = document.createElement("h");
+var bc = document.createElement("p");
+
+ab.textContent =" Hi sarvesh sharma ";
+bc.textContent ="Hey hi kese ho aap ";
+
+df.appendChild(ab);
+df.appendChild(bc);
+
+// console.log(df)
+
+var target = document.getElementById("myid");
+
+target.appendChild(df);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let ab = document.createElement("h2");
+// let bc = document.createTextNode("Hi sarvesh ");
+// let cd = document.createComment("Hhi sarveshsharma same as happy sharma ");
+
+// ab.appendChild(bc);
+// ab.appendChild(cd);
+// console.log(ab);
+
+
+
+
+
+
+
+
+
+
+
+
+// let ttarget = document.getElementById("myid");
+// let otxtnode = document.createTextNode(" Hello india ");
+// ttarget.appendChild(otxtnode);
+
+// console.log(ttarget);
+
+// let ty = document.createComment("Hello sarvesh sharma");
+// ttarget.appendChild(ty);
+
+</script>
+
+</body>
+</html>
